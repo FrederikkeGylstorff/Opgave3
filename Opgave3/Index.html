@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link >
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" style=" padding-top: 200px;"> 
+        <h3> Skriv et ord</h3>
+        <input id="inputField" v-model="myStr" placeholder="ord">
+        <button id="button" @click="wordToLowerCase(), wordToUpperCase(), showWord(myStr)"  >show</button>
+       <div >
+        <ol >
+            <li id="outputField" >{{message}}</li>
+            <li id="outputField" >{{myStr1}}</li>
+            <li id="outputField">{{myStr2}}</li>
+        </ol>
+       </div>
+
+       <table class="table table-striped table-bordered" >
+           
+        <tr>
+            <td scope="col-sm-3">1</td>
+            <td>{{message}}</td>
+        </tr>
+        <tr >
+            <td scope="col-sm-3">2</td>
+            <td>{{myStr1}}</td>
+        </tr>
+        <tr>
+            <td scope="col-sm-3" >3</td>
+            <td>{{myStr2}}</td>
+        </tr>
+        
+    </table>
+
+        
+    </div>
+
+    <script src="js/index.js">  </script>
+</body>
+</html>
